@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c1306ed-4bb8-4882-bfbd-5f12a8350cdb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -523,7 +522,7 @@
       <workItem from="1512006545856" duration="1799000" />
       <workItem from="1512008978753" duration="3314000" />
       <workItem from="1512183702884" duration="69000" />
-      <workItem from="1512183833194" duration="13649000" />
+      <workItem from="1512183833194" duration="13684000" />
     </task>
     <task id="LOCAL-00001" summary="add desktop navigation items">
       <created>1511953553398</created>
@@ -700,11 +699,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512211830403</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add comments in README">
+      <created>1512212203975</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1512212203975</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41144000" />
+    <option name="totallyTimeSpent" value="41179000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -778,7 +784,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add desktop navigation items" />
     <MESSAGE value="add sidedrawer for mobile" />
     <MESSAGE value="add logo size for sidedrawer and toolbar" />
     <MESSAGE value="responsive setting" />
@@ -803,7 +808,8 @@
     <MESSAGE value="fetching order" />
     <MESSAGE value="output ingredient in order" />
     <MESSAGE value="remove checkout button on the nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove checkout button on the nav" />
+    <MESSAGE value="add comments in README" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments in README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
