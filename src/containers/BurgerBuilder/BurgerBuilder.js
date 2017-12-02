@@ -83,6 +83,7 @@ class BurgerBuilder extends Component {
     purchaseCancelHandler = () => {
         this.setState({purchasing: false});
     };
+    /*
     purchaseContinueHandler = () => {
         // alert('You continue!');
         this.setState({loading: true});
@@ -109,6 +110,11 @@ class BurgerBuilder extends Component {
                 console.log(error);
                 this.setState({loading: false, purchasing: false});
             });
+    };
+*/
+    purchaseContinueHandler = () => {
+        //push a new pages
+        this.props.history.push('/checkout');
     };
 
     render() {
