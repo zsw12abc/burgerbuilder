@@ -19,7 +19,8 @@ class ContractData extends Component {
                 validation: {
                     required: true,
                 },
-                valid: false
+                valid: false,
+                touched: false
             },
             street: {
                 elementType: 'input',
@@ -31,7 +32,8 @@ class ContractData extends Component {
                 validation: {
                     required: true,
                 },
-                valid: false
+                valid: false,
+                touched: false
             },
             zipCode: {
                 elementType: 'input',
@@ -45,7 +47,8 @@ class ContractData extends Component {
                     minLength: 4,
                     maxLength: 8,
                 },
-                valid: false
+                valid: false,
+                touched: false
             },
             country: {
                 elementType: 'input',
@@ -57,7 +60,8 @@ class ContractData extends Component {
                 validation: {
                     required: true,
                 },
-                valid: false
+                valid: false,
+                touched: false
             },
             email: {
                 elementType: 'input',
@@ -69,7 +73,8 @@ class ContractData extends Component {
                 validation: {
                     required: true,
                 },
-                valid: false
+                valid: false,
+                touched: false
             },
             deliveryMethod: {
                 elementType: 'select',
@@ -79,9 +84,11 @@ class ContractData extends Component {
                         {value: 'cheapest', displayValue: 'Cheapest'}
                     ]
                 },
-                value: ''
+                value: '',
+                valid: true
             },
         },
+        formIsValid: false,
         loading: false
     };
 
@@ -131,9 +138,15 @@ class ContractData extends Component {
         const updatedFormElement = {...updatedOrderForm[inputIdentifier]};
         updatedFormElement.value = event.target.value;
         updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation);
+        updatedFormElement.touched = true;
         updatedOrderForm[inputIdentifier] = updatedFormElement;
-        console.log(updatedFormElement);
-        this.setState({orderForm: updatedOrderForm});
+
+        let formIsValid = true;
+        for (let inputIdentifier in updatedOrderForm) {
+            formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
+        }
+
+        this.setState({orderForm: updatedOrderForm, formIsValid: formIsValid});
     };
 
     render() {
@@ -155,9 +168,11 @@ class ContractData extends Component {
                         value={formElement.config.value}
                         invalid={!formElement.config.valid}
                         shouldValidate={formElement.config.validation}
+                        touched={formElement.config.touched}
                         changed={(event) => this.inputChangedHandler(event, formElement.id)}/>
                 ))}
-                <Button btnType={"Success"} clicked={this.orderHandler}>ORDER</Button>
+                <Button btnType={"Success"} clicked={this.orderHandler}
+                        disabled={!this.state.formIsValid}>ORDER</Button>
             </form>);
         if (this.state.loading) {
             form = <Spinner/>
