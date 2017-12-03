@@ -84,7 +84,8 @@ class ContractData extends Component {
                         {value: 'cheapest', displayValue: 'Cheapest'}
                     ]
                 },
-                value: '',
+                value: 'fastest',
+                validation: {},
                 valid: true
             },
         },
