@@ -32,8 +32,8 @@
       <file leaf-file-name="ContractData.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Checkout/ContractData/ContractData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-769">
-              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            <state relative-caret-position="376">
+              <caret line="121" column="54" lean-forward="true" selection-start-line="121" selection-start-column="54" selection-end-line="121" selection-end-column="54" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -397,7 +397,7 @@
       <workItem from="1512006545856" duration="1799000" />
       <workItem from="1512008978753" duration="3314000" />
       <workItem from="1512183702884" duration="69000" />
-      <workItem from="1512183833194" duration="19723000" />
+      <workItem from="1512183833194" duration="20447000" />
     </task>
     <task id="LOCAL-00001" summary="add desktop navigation items">
       <created>1511953553398</created>
@@ -623,11 +623,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512220753736</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="submission(error not submit post way)">
+      <created>1512221271268</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1512221271268</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47218000" />
+    <option name="totallyTimeSpent" value="47942000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -701,7 +708,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="open sidedrawer by adding a components" />
     <MESSAGE value="add unnecessary render prevention" />
     <MESSAGE value="add instance axios url for send httprequest to my databace&#10;https://react-my-burger-c5dd4.firebaseio.com/" />
     <MESSAGE value="send the post(order summary) to the server" />
@@ -726,7 +732,8 @@
     <MESSAGE value="dynamically create inputs based on JS" />
     <MESSAGE value="dropdown component" />
     <MESSAGE value="handling user input(2 way binding)" />
-    <option name="LAST_COMMIT_MESSAGE" value="handling user input(2 way binding)" />
+    <MESSAGE value="submission(error not submit post way)" />
+    <option name="LAST_COMMIT_MESSAGE" value="submission(error not submit post way)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1173,8 +1180,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Checkout/ContractData/ContractData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-769">
-          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state relative-caret-position="376">
+          <caret line="121" column="54" lean-forward="true" selection-start-line="121" selection-start-column="54" selection-end-line="121" selection-end-column="54" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
