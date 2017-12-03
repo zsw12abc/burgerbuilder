@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c1306ed-4bb8-4882-bfbd-5f12a8350cdb" name="Default" comment="">
+    <list default="true" id="2c1306ed-4bb8-4882-bfbd-5f12a8350cdb" name="Default" comment="fix error in validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/containers/Checkout/ContractData/ContractData.js" afterPath="$PROJECT_DIR$/src/containers/Checkout/ContractData/ContractData.js" />
     </list>
@@ -32,8 +32,8 @@
       <file leaf-file-name="ContractData.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Checkout/ContractData/ContractData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="121" column="54" lean-forward="true" selection-start-line="121" selection-start-column="54" selection-end-line="121" selection-end-column="54" />
+            <state relative-caret-position="289">
+              <caret line="120" column="30" lean-forward="true" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -397,7 +397,7 @@
       <workItem from="1512006545856" duration="1799000" />
       <workItem from="1512008978753" duration="3314000" />
       <workItem from="1512183702884" duration="69000" />
-      <workItem from="1512183833194" duration="20447000" />
+      <workItem from="1512183833194" duration="20562000" />
     </task>
     <task id="LOCAL-00001" summary="add desktop navigation items">
       <created>1511953553398</created>
@@ -630,11 +630,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512221271268</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="custom form validation version 1">
+      <created>1512263897190</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1512263897190</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47942000" />
+    <option name="totallyTimeSpent" value="48057000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -708,8 +715,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add unnecessary render prevention" />
-    <MESSAGE value="add instance axios url for send httprequest to my databace&#10;https://react-my-burger-c5dd4.firebaseio.com/" />
     <MESSAGE value="send the post(order summary) to the server" />
     <MESSAGE value="display a spinner while sending request&#10;spinner.css from: https://projects.lukehaas.me/css-loaders/" />
     <MESSAGE value="handling error by adding a errorhandler globally" />
@@ -733,7 +738,9 @@
     <MESSAGE value="dropdown component" />
     <MESSAGE value="handling user input(2 way binding)" />
     <MESSAGE value="submission(error not submit post way)" />
-    <option name="LAST_COMMIT_MESSAGE" value="submission(error not submit post way)" />
+    <MESSAGE value="custom form validation version 1" />
+    <MESSAGE value="fix error in validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix error in validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1180,8 +1187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Checkout/ContractData/ContractData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="121" column="54" lean-forward="true" selection-start-line="121" selection-start-column="54" selection-end-line="121" selection-end-column="54" />
+        <state relative-caret-position="289">
+          <caret line="120" column="30" lean-forward="true" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
