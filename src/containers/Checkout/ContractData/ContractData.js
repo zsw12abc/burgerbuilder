@@ -120,6 +120,9 @@ class ContractData extends Component {
 
     checkValidity(value, rules) {
         let isValid = true;
+        if (!rules) {
+            return true;
+        }
         if (rules.required) {
             isValid = value.trim() !== '' && isValid;
         }
