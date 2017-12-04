@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 import Button from '../../../components/UI/Button/Button';
-import classes from './ContractData.css'
+import classes from './ContractData.css';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import axios from '../../../axios-orders';
-import Input from '../../../components/UI/Input/Input'
+import Input from '../../../components/UI/Input/Input';
 
 class ContractData extends Component {
     state = {
@@ -102,7 +103,7 @@ class ContractData extends Component {
             formData[formElementIdentifier] = this.state.orderForm[formElementIdentifier].value;
         }
         const order = {
-            ingredients: this.props.ingredients,
+            ingredients: this.props.ings,
             price: this.props.price,
             orderData: formData
         };
@@ -179,7 +180,7 @@ class ContractData extends Component {
                         disabled={!this.state.formIsValid}>ORDER</Button>
             </form>);
         if (this.state.loading) {
-            form = <Spinner/>
+            form = <Spinner/>;
         }
         return (
             <div className={classes.ContractData}>
@@ -190,4 +191,11 @@ class ContractData extends Component {
     }
 }
 
-export default ContractData;
+const mapStateToProps = state => {
+    return {
+        ings: state.ingredients,
+        price: state.totalPrice
+    };
+};
+
+export default connect(mapStateToProps)(ContractData);
