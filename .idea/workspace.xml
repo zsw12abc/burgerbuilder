@@ -4,8 +4,8 @@
     <list default="true" id="2c1306ed-4bb8-4882-bfbd-5f12a8350cdb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/burgerBuilder.js" afterPath="$PROJECT_DIR$/src/store/actions/burgerBuilder.js" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" afterPath="$PROJECT_DIR$/src/store/actions/index.js" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/burgerBuilder.js" afterPath="$PROJECT_DIR$/src/store/reducers/burgerBuilder.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,21 +23,31 @@
       <file leaf-file-name="burgerBuilder.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/reducers/burgerBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="497">
+              <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BurgerBuilder.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BurgerBuilder.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="94" column="42" lean-forward="true" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+            <state relative-caret-position="293">
+              <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="26" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/actions/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,12 +62,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="burgerBuilder.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="burgerBuilder.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/store/actions/burgerBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="337">
+              <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,6 +95,7 @@
       <find>this.state.ingredients</find>
       <find>state.price</find>
       <find>this.props.ing</find>
+      <find>state.error</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -139,12 +152,12 @@
         <option value="$PROJECT_DIR$/src/store/reducers/reducer.js" />
         <option value="$PROJECT_DIR$/src/store/actions/order.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/order.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/store/reducers/burgerBuilder.js" />
         <option value="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/burgerBuilder.js" />
+        <option value="$PROJECT_DIR$/src/store/reducers/burgerBuilder.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/index.js" />
         <option value="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/burgerBuilder.js" />
       </list>
     </option>
   </component>
@@ -159,7 +172,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -386,14 +399,7 @@
       <workItem from="1512183702884" duration="69000" />
       <workItem from="1512183833194" duration="22959000" />
       <workItem from="1512367516531" duration="7501000" />
-      <workItem from="1512457101608" duration="2814000" />
-    </task>
-    <task id="LOCAL-00003" summary="add logo size for sidedrawer and toolbar">
-      <created>1511956718805</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1511956718805</updated>
+      <workItem from="1512457101608" duration="3429000" />
     </task>
     <task id="LOCAL-00004" summary="responsive setting">
       <created>1511957244621</created>
@@ -731,11 +737,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512462038845</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="fetching ingredients asynchronously">
+      <created>1512463066394</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1512463066395</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60769000" />
+    <option name="totallyTimeSpent" value="61384000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -747,7 +760,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.81395346" order="0" side_tool="false" content_ui="combo" />
@@ -810,7 +823,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="add comments in README" />
     <MESSAGE value="create custom dynamic input component" />
     <MESSAGE value="set up js config for form" />
     <MESSAGE value="dynamically create inputs based on JS" />
@@ -835,7 +847,8 @@
     <MESSAGE value="create file for redux seperate the reducers and actions" />
     <MESSAGE value="create action creator" />
     <MESSAGE value="import react-thunk and add middleware into the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="import react-thunk and add middleware into the project" />
+    <MESSAGE value="fetching ingredients asynchronously" />
+    <option name="LAST_COMMIT_MESSAGE" value="fetching ingredients asynchronously" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1209,14 +1222,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1245,26 +1250,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/reducers/burgerBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="497">
+          <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/burgerBuilder.js">
+    <entry file="file://$PROJECT_DIR$/src/store/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="94" column="42" lean-forward="true" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+        <state relative-caret-position="293">
+          <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="26" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/burgerBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
