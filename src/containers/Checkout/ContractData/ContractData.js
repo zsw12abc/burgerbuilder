@@ -4,7 +4,6 @@ import {connect} from 'react-redux';
 import Button from '../../../components/UI/Button/Button';
 import classes from './ContractData.css';
 import Spinner from '../../../components/UI/Spinner/Spinner';
-import axios from '../../../axios-orders';
 import Input from '../../../components/UI/Input/Input';
 
 class ContractData extends Component {
@@ -107,16 +106,6 @@ class ContractData extends Component {
             price: this.props.price,
             orderData: formData
         };
-        axios.post('/orders.json', order)//send order summary as json to my server
-            .then(response => {
-                console.log(response);
-                this.setState({loading: false});
-                this.props.history.push('/');
-            })
-            .catch(error => {
-                console.log(error);
-                this.setState({loading: false});
-            });
     };
 
     checkValidity(value, rules) {
