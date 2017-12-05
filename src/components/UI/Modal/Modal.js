@@ -26,7 +26,7 @@ class modal extends Component {
                     {this.props.children}
                 </div>
             </Aux>
-        )
+        );
     }
 }
 

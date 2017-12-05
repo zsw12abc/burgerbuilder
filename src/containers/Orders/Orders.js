@@ -23,7 +23,7 @@ class Orders extends Component {
             this.setState({loading: false, orders: fetchedOrders});
         }).catch(err => {
             this.setState({loading: false});
-        })
+        });
     }
 
     render() {

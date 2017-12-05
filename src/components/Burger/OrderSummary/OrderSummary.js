@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
+
 import Aux from "../../../hoc/Aux/Aux";
 import Button from "../../UI/Button/Button";
 
 class orderSummary extends Component {
-    componentWillUpdate(){
+    componentWillUpdate() {
         console.log('[OrderSummary] Will Update');
     }
+
     render() {
         const ingredientSummary = Object.keys(this.props.ingredients)
             .map(igKey => {
@@ -13,7 +15,7 @@ class orderSummary extends Component {
                     <li key={igKey}>
                         <span style={{textTransform: 'capitalize'}}>{igKey}</span>: {this.props.ingredients[igKey]}
                     </li>
-                )
+                );
             });
 
 
@@ -29,7 +31,7 @@ class orderSummary extends Component {
                 <Button btnType="Danger" clicked={this.props.purchaseCanceled}>CANCEL</Button>
                 <Button btnType="Success" clicked={this.props.purchaseContinued}>CONTINUE</Button>
             </Aux>
-        )
+        );
     }
 }
 

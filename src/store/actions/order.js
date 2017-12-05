@@ -24,11 +24,11 @@ export const purchaseBurgerStart = () => {
 
 export const purchaseBurger = (orderData) => {
     return dispatch => {
-        purchaseBurgerStart();
+        dispatch(purchaseBurgerStart());
         axios.post('/orders.json', orderData)//send order summary as json to my server
             .then(response => {
                 console.log(response);
-                dispatch(purchaseBurgerSuccess(response.data, orderData));
+                dispatch(purchaseBurgerSuccess(response.data.name, orderData));
             })
             .catch(error => {
                 console.log(error);
