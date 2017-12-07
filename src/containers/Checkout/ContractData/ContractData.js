@@ -8,7 +8,7 @@ import Input from '../../../components/UI/Input/Input';
 import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler';
 import * as actions from '../../../store/actions/index';
 import axios from "../../../axios-orders";
-import {updateObject} from "../../../shared/utility";
+import {checkValidity, updateObject} from "../../../shared/utility";
 
 
 class ContractData extends Component {
@@ -117,7 +117,7 @@ class ContractData extends Component {
 	inputChangedHandler = (event, inputIdentifier) => {
 		const updatedFormElement = updateObject(this.state.orderForm[inputIdentifier], {
 			value: event.target.value,
-			valid: this.checkValidity(event.target.value, this.state.orderForm[inputIdentifier].validation),
+			valid: checkValidity(event.target.value, this.state.orderForm[inputIdentifier].validation),
 			touched: true,
 		});
 		const updatedOrderForm = updateObject(this.state.orderForm, {
@@ -131,23 +131,6 @@ class ContractData extends Component {
 
 		this.setState({orderForm: updatedOrderForm, formIsValid: formIsValid});
 	};
-
-	checkValidity(value, rules) {
-		let isValid = true;
-		if (!rules) {
-			return true;
-		}
-		if (rules.required) {
-			isValid = value.trim() !== '' && isValid;
-		}
-		if (rules.minLength) {
-			isValid = value.length >= rules.minLength && isValid;
-		}
-		if (rules.maxLength) {
-			isValid = value.length <= rules.maxLength && isValid;
-		}
-		return isValid;
-	}
 
 	render() {
 		const formElementsArray = [];
